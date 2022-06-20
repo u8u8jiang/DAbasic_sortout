@@ -13,7 +13,7 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 - Regression : Linear Regression、Time Series、Random Forest Regression  
 - Dimensionality reduction : PCA、LDA、TSNE  
 - 最佳化建模: Cplex, Heuristic Algorithm
-- :cat:Image- Python: PyTorch/TensorFlow/Scikit-learn, Image Classification, Object Detection  
+- :cat: Image- Python: PyTorch/TensorFlow/Scikit-learn, Image Classification, Object Detection  
 - NLP-  Python: PyTorch/TensorFlow/Scikit-learn/NLTK, NLP Technique: BERT/Tokenization/TF-IDF/Word2Vec  
 - :cat: 深度學習- Python, Pytorch, Tensorflow, CNN、LSTM、RNN、GAN、MLPs、Auto-Encoder  
 
