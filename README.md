@@ -1,5 +1,11 @@
 In 2022.04, sortout the basic DA knowledge studied last year, and practice leecode and python 100days to enhence my technical skill.
 
+
+
+# 基本系統與程式能力：
+Linux OS, Cloud(AWS, Azure, GCP)  
+Python, C, C++, Java, C#  
+
 # 數據處理: 
 - 數值型- Python(pandas / numpy)  
 - :cat: Image- OpenCV, Self-Defined Functions, Image Data Augmentation  
@@ -22,6 +28,7 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 ML套件- ScikitLearn / Scipy  
 2. OS: Linux  
 Container: Docker  
+3. AI解決方案應用整合: AWS AI, Azure AI, IBM AI  
 # 上線佈署:   
 - :cat: Kubernetes Rancher  
 - OS: Linux  
