@@ -7,11 +7,11 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 - Text- NoSQL Database: Elasticsearch/Virtuoso (or any kind of graph database)  
 
 # 模型開發與應用:
-## 數值型- 機率統計/回歸/分類/分群
-- Classification : K-NN、SVM、Decision Tree、Random Forest  
-- Clustering : K-means、Hierarchical、BDSCAN  
-- Regression : Linear Regression、Time Series、Random Forest Regression  
-- Dimensionality reduction : PCA、LDA、TSNE  
+- 數值型- 機率統計/回歸/分類/分群
+    - Classification : K-NN、SVM、Decision Tree、Random Forest  
+    - Clustering : K-means、Hierarchical、BDSCAN  
+    - Regression : Linear Regression、Time Series、Random Forest Regression  
+    - Dimensionality reduction : PCA、LDA、TSNE  
 - 最佳化建模: Cplex, Heuristic Algorithm
 - :cat: Image- Python: PyTorch/TensorFlow/Scikit-learn, Image Classification, Object Detection  
 - NLP-  Python: PyTorch/TensorFlow/Scikit-learn/NLTK, NLP Technique: BERT/Tokenization/TF-IDF/Word2Vec  
