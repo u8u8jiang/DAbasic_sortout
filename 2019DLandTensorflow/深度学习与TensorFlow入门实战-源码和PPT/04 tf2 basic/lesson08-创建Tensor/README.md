@@ -51,7 +51,7 @@ tf.random.truncated_normal([2,2],mean=0, stddev=1)  #截斷的normal
 
 
 ```
-![](images/image2.png)
+![](/image2.png)
 
  
 

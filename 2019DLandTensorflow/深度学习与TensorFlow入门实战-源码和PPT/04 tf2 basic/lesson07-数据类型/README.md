@@ -12,7 +12,7 @@
 - scalar, vector, matrix, tensor  
 - tensor的概念比較大，幾乎涵蓋了所有的數據類型  
 - tensorflow: tensor經過各種運算，在網絡中間不停流動，最後得到我們想要的結果。
-![](images/image1.png) 
+![](image1.png) 
 
 :turtle: tf的基本數據類型   
 - int, float, double  
