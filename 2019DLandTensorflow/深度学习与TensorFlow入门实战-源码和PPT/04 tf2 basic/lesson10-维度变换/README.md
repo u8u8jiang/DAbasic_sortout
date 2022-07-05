@@ -9,10 +9,10 @@
 
 
 ### 1 view: ensure including every info, but not to disjoint the data
-view1: [b, 28, 28]
-view2: [b, 28*28]
-view3: [b, 2, 14*28]
-view4: [b, 28, 28, 1]
+view1: [b, 28, 28]  
+view2: [b, 28*28]  
+view3: [b, 2, 14*28]  
+view4: [b, 28, 28, 1]  
 ...
 
 
