@@ -16,13 +16,14 @@ print(tf.reduce_min(x), tf.reduce_max(x))  #[0.0, 1.0]
 print(tf.reduce_min(y), tf.reduce_max(y))  #[0, 9]
 
 
+#build a dataset
 train_db = tf.data.Dataset.from_tensor_slices((x,y)).batch(128)
-train_iter = iter(train_db)
+train_iter = iter(train_db) #iteration
 sample = next(train_iter)
 print('batch:', sample[0].shape, sample[1].shape)
 
 
-# [b, 784] => [b, 256] => [b, 128] => [b, 10]
+# [b, 784] => [b, 256] => [b, 128] => [b, 10](class)
 # [dim_in, dim_out], [dim_out]
 w1 = tf.Variable(tf.random.truncated_normal([784, 256], stddev=0.1))
 b1 = tf.Variable(tf.zeros([256]))
@@ -68,7 +69,7 @@ for epoch in range(10): # iterate db for 10
         grads = tape.gradient(loss, [w1, b1, w2, b2, w3, b3])
         # print(grads)
         # w1 = w1 - lr * w1_grad
-        w1.assign_sub(lr * grads[0])
+        w1.assign_sub(lr * grads[0])  #原地更新
         b1.assign_sub(lr * grads[1])
         w2.assign_sub(lr * grads[2])
         b2.assign_sub(lr * grads[3])

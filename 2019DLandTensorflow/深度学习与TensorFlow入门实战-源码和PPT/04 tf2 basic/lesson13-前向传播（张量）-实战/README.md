@@ -10,6 +10,9 @@
 ![](recap.png)
 
 ## 13 forward propagation  
+forward.py  
+
+
 
 
 
