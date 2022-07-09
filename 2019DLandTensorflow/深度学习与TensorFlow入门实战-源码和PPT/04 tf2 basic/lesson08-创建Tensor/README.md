@@ -121,12 +121,6 @@ net(x)  #[4,32,32,16], turn the channel from 3 to 16
 #meta-learning: learning how to learn
 #掌握每個維度具體涵義, what application each dim of tensor use in?
 
-
-
-
-
-
-
 ```
 
  
