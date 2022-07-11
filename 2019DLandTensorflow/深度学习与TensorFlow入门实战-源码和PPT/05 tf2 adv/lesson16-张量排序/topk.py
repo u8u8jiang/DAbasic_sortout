@@ -25,9 +25,9 @@ def accuracy(output, target, topk=(1,)):
 
 
 
-output = tf.random.normal([10, 6])
+output = tf.random.normal([10, 6])                         #10sample, 6class
 output = tf.math.softmax(output, axis=1)
-target = tf.random.uniform([10], maxval=6, dtype=tf.int32)
+target = tf.random.uniform([10], maxval=6, dtype=tf.int32) #select in [0,5]
 print('prob:', output.numpy())
 pred = tf.argmax(output, axis=1)
 print('pred:', pred.numpy())
