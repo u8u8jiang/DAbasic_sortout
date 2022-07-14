@@ -9,7 +9,7 @@
 
 ### recap  
 out = f(X@W+b)
-out = relu(X@W+b)
+out = relu(X@W+b)  
 ![](x%40w%2Bb.png)
 
 ### 1. black magic!

@@ -34,7 +34,7 @@ y_onehot[:2]
 
 ### 2. CIFAR10/100: 
 - [32,32,3]
-![](cifer10_100.png)
+![](cifar10_100.png)
   
 ```py
 # numpy > tensor > iter
