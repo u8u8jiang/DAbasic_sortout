@@ -14,7 +14,7 @@
     
     
 ### 1. MNIST: 
-- (28*28*1): 1 channel
+- (28 * 28 * 1): 1 channel
 - 70k/ 60k/ 10k
 
 ![](mnist.png)
