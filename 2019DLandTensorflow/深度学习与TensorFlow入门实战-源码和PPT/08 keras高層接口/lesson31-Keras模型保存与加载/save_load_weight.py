@@ -44,6 +44,7 @@ network.compile(optimizer=optimizers.Adam(lr=0.01),
 		metrics=['accuracy']
 	)
 
+#training three epoch, test the network, and delete the weights.
 network.fit(db, epochs=3, validation_data=ds_val, validation_freq=2)
  
 network.evaluate(ds_val)
@@ -52,6 +53,7 @@ network.save_weights('weights.ckpt')
 print('saved weights.')
 del network
 
+#create the weight, here weight is the same as network
 network = Sequential([layers.Dense(256, activation='relu'),
                      layers.Dense(128, activation='relu'),
                      layers.Dense(64, activation='relu'),
