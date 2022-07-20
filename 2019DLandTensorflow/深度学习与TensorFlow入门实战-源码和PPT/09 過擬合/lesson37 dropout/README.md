@@ -48,7 +48,8 @@ for step, (x,y) in enumerate(db):
 * Deterministic:   
 
 ![](gradient.png)
-![](gradient1.png)
+![](gradient1.png)  
 Not single usually, set the batch = 16, 32, 64, 128. 
+
 
 
