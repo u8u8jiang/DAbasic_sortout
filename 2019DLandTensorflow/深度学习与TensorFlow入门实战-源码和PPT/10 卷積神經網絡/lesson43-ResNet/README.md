@@ -81,9 +81,11 @@ def _build_resblock(self, block, filter_num, blocks, stride=1):
 
 ```
 
+
+# DenseNet
 ![](densenet.png)
-中間的每一層都有可能與最開始的每一層有機會接觸，連接很密集。  
-對前面訊息有總和，不是elementwise相加，而是concate操作，使得後方的channel越來越大。反之，使你的channnel不至於太大，這是從ResNet延伸而得的DenseNet。  
+- 中間的每一層都有可能與最開始的每一層有機會接觸，連接很密集。  
+- 對前面訊息有總和，不是elementwise相加，而是concate操作，使得後方的channel越來越大。反之，使你的channnel不至於太大，這是從ResNet延伸而得的DenseNet。  
 
 
 
