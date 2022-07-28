@@ -1,5 +1,6 @@
+# Recurrent neural network：RNN, 循環神經網絡    
 
-# Time series  
+## Time series  
 
 **1. Spatial signals**  
 ![](spatialSignal.png)    
@@ -40,7 +41,7 @@ net.trainable_variables
 ```
 
 
-# Recurrent neural network：RNN, 循環神經網絡    
+## Recurrent neural network：RNN, 循環神經網絡    
 
 **Sentiment analysis:** pos/neg  
 ![](sentimentanl.png)  
