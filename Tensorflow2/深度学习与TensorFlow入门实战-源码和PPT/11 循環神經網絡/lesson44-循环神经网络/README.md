@@ -60,8 +60,9 @@ net.trainable_variables
 ![](formulation.png)  
  
 
-The gradient: 
+**The gradient:** 
 ![](gradient.png)
+
 
 
   
