@@ -1,3 +1,7 @@
+win10, python3.7, anaconda2019.03,   
+tensorflow-gpu2.0/1.14, CUDA 10.0
+
+
 # 深度學習框架介紹
 
 Tensorflow+keras  
