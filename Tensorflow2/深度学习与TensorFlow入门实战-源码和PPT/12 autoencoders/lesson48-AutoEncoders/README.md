@@ -39,7 +39,14 @@ When training, set the weight to zero st.
 the system is rebust, not depend on too many neurons,   
 BY setting "the prob of dropout and keep"     
 
-3. Dropout Autoencoder   
+3. Adversarial Autoencoder   
+![](adversarialAuto.png)   
+distribution of hidden code: encoder hist, encoder dist     
+![](adversarialAuto2.png)    
+discriminator: 識別器, between fake z and real z  
+sample() isn't diff   
 
+4. Variational Autoencoder (VAE)   
+![](VAEautoencoder.png)
 
 
