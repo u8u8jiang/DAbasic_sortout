@@ -2,3 +2,5 @@
 |:--------:|:-------:|:-------:|
 | 1 | learn for SQL with Clik | 2022.04.11 |
 | 2 | read SQL doc in DAbigdata | 2022.05.03 |
+| 3 | watch online course of bigdata dev | 2022.08.09 |
+
