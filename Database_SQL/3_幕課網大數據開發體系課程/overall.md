@@ -35,6 +35,57 @@
 ![](./images/hadoopclient.png)    
 
 
+# 2. [1.3.1.1]--1-1HDFS介紹    
+hadoop有三大組件: HDFS, MapReduce, YARM   
+HDFS- 分布式文件系統,   
+![](./images/HDFSintro.png)  
+左邊是客戶端, 當用戶透過客戶端寫入或讀取數據時, 透過中間的文件系統, 串接後面的服務器, 所以我們的數據可以存儲在多台服務器上, 後期服務器或增或減皆可.   
+用戶主要透過文件系統與服務器進行交互, 寫數據時通過文件系統, 文件系統將數據存到不同服務器上.   
+![](./images/HDFSintro-2.png)    
+主節點好比中介公司, 安排工作人員服務從節點的房源, 主節點跟客戶端說是哪個工作人員, 直接去找那個工作人員服務    
+
+HDFS(Hadoop Distributed File System), hadoop框架分布式文件系統    
+HDFS允許文件通過網絡在主機上分享的文件系統, 可以讓多台機器上的多個用戶分享文件與存儲空間. (共享的分佈式文件系統)    
+分佈式文件系統有很多, 如GFS(google), TFS(Tabao), S3(Amazon)...   
+為甚麼會有多種?   
+特點不同, HDFS-適合大文件存儲, 不適合存儲小文件   
+
+# 3. [1.3.1.2]--1-2HDFS的Shell介紹   
+在linux的shell命令行下操作, 相當於操作linux的文件系統    
+操作格式: bin/hbfs dbs -xxx scheme ://authority /path   
+
+首先要使用hadoop bin目錄下的hdfs命令, 後面指定dfs, 表示要操作的是一個分布式文件系統,    
+注意: 這些屬於基本的固定格式, 如果說在PATH中配置hadoop的bin目錄, 那麼在這邊使用時, 直接寫hdfs即可. 不用再帶路徑訊息   
+
+scheme- hdfs   
+authority-  表示集群中namenode所在節點的ip, 和對應的port (主節點 ip:port)    
+path- 操作文件的path   
+
+在core-site.xml配置文件中, 有個fs.defaultFS, 代表HDFS的地址.   
+可以到集群裡作確認,   
+cd /data/soft/hadoop-3.2.0/etc/hadoop/    
+cat core-site.xml   
+
+
+# 4. [1.4.1.1]1-1NameNode介紹    
+　　　
+###　HDFS體系結構:   
+* HDFS支持主從結構, 主節點稱為*NameNode*, 支持多個從節點稱為*DateNode*, 支持多個    
+    - hadoop支持主從結構, hadoop包含HDFS及YARN這些組件, 所以說HDFS及YARN也都是支持主從結構, 那HDFS中的主節點稱為NameNode   
+    - 主要是因為主節點上, 運行的有NameNode進程, 可支持多個主節點   
+    - 從節點稱為DateNode, 因為上有DateNode進程, 可支持多個DateNode   
+* HDFS中還包含一個*SecondaryNameNode*進程    
+
+![](./images/HDFS_namenode.png)    
+
+前面配置的集群裡的NameNode, SecondaryNameNode   
+不同的線, 不同的通訊協議    
+
+### NameNode介紹:     
+* NameNode是整個文件系統的管理節點,   
+* 主要維護整個文件系統的文件目錄樹, 文件/目錄的訊息, 每個文件對應的數據塊列表, 並且負責接收用戶操作請求.      
+    - 文件目錄樹: 文件層級關係ls   
+    - 數據塊列表: 文件存在哪個數據塊   
 
 
 
