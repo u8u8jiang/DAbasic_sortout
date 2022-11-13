@@ -276,10 +276,10 @@ java中也有很多訊息陣列, 如: ActiveMQ, RabbitMQ
     * 例如, 使用flume採集網站產生的日誌數據, 將數據寫進kafka中, 後面再通過spark或flink, 從kafka中消費數據進行計算    
 
 ![](./images/kafka_1.png)    
-* 
+*        
     * kafka cluster有兩個節點broker, 是為訊息代理, topic-kafka處理訊息的不同分類, 為一個邏輯概念. 一個topic會被分為多個partition, partition可提高數據的容錯性
-    leader partition負責接收用戶的讀寫請求, 副本的partition, 從leader那同步數據. 若leader partition數據崩潰, 可直接從負本切換到leader
-    * zookeeper負責協調集群的正常運行  
+    leader partition負責接收用戶的讀寫請求, 副本的partition, 從leader那同步數據. 若leader partition數據崩潰, 可直接從負本切換到leader      
+    * zookeeper負責協調集群的正常運行      
 
 * broker: 訊息代理, kafka集群中的一個節點稱為broker    
 * topic: 主題, kafka處理訊息的不同分類(邏輯概念)    
