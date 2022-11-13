@@ -2,48 +2,21 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 
 
 
-# 基本系統與程式能力：
-Linux OS, Cloud(AWS, Azure, GCP)  
-Python, C, C++, Java, C#  
+| No | folder | file |  Description  |  Date | 
+|:--------:|:-------:|:-------:|:-------:|:-------:| 
+| 1 | Bussiness_PM | translator.md, translator-copwithDS.md |translator training |  2022.05.07 |
+| 2 | Bussiness_PM | DigitalTwins.md | learn for digital twin with Clik | 2022.05.10 |
+| 3 | Database_SQL | 1_tutorial | learn for SQL with Clik | 2022.04.11 |
+| 4 | Database_SQL | 2_DAemployee | read SQL doc in DAbigdata | 2022.05.03 |
+| 5 | Database_SQL | 3_幕課網大數據開發體系課程 | watch online course of bigdata dev, to know overall of bigdata concept | 2022.08.09 |
+| 6 | Tensorflow2 | senior command | senior command- NNpaper*10 | 2022.03 |
+| 7 | Tensorflow2 | TensorFlow-2.x-Tutorials | TensorFlow-2.x-Tutorials  | not yet |
+| 8 | Tensorflow2 | 深度学习与TensorFlow2入门实战 | 深度学习与TensorFlow2入门实战 | 2022.07.25 |   
 
-# 數據處理: 
-- 數值型- Python(pandas / numpy)  
-- :cat: Image- OpenCV, Self-Defined Functions, Image Data Augmentation  
-- :cat: Text- SQL Database: MaraDB/MySQL/MSSQL (or any kind relational database)  
-- Text- NoSQL Database: Elasticsearch/Virtuoso (or any kind of graph database)  
 
-# 模型開發與應用:
-- 數值型- 機率統計/回歸/分類/分群
-    - Regression : Linear Regression、Time Series、Random Forest Regression  
-    - Classification : K-NN、SVM、Decision Tree、Random Forest  
-    - Clustering : K-means、Hierarchical、BDSCAN  
-    - Dimensionality reduction : PCA、LDA、TSNE  
-- 最佳化建模: Cplex, Heuristic Algorithm
-- :cat: Image- Python: PyTorch/TensorFlow/Scikit-learn, Image Classification, Object Detection  
-- NLP-  Python: PyTorch/TensorFlow/Scikit-learn/NLTK, NLP Technique: BERT/Tokenization/TF-IDF/Word2Vec  
-- :cat: 深度學習- Python, Pytorch, Tensorflow, CNN、LSTM、RNN、GAN、MLPs、Auto-Encoder  
 
-# 開發環境整合: 
-1. :cat: 開發環境-SQL DB / ETL  
-ML套件- ScikitLearn / Scipy  
-2. OS: Linux  
-Container: Docker  
-3. AI解決方案應用整合: AWS AI, Azure AI, IBM AI  
-# 上線佈署:   
-- :cat: Kubernetes Rancher  
-- OS: Linux  
-- Container: Docker/Kubernetes  
-# 系統工程
-:cat: 系統架構:   
-1.	Postgres DB, CICD, Gitlab  
-2.	Docker, ES DB,  API  
-3.	MQTT  
-功能設計: Function Tree Design, Schedule Control, Product Roadmap
-
-# Others
-- 需求訪談: 業務流程分析  
-- 場景定義: 9 Box / 業務流程分析  
-- 跨部門專案合作與溝通  
-
+next step update in algorithm_coding repository    
+* NLPalgorithm    
+* python100days   
 
 
