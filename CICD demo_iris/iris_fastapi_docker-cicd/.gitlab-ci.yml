@@ -1,0 +1,144 @@
+stages:
+  - build_for_test
+  - deploy_for_test
+  - test
+  - setup
+  - code_scan
+  - deploy
+  - update
+  - clean
+
+build_test_image:
+  only:
+    - master
+  stage: build_for_test
+  image: harbor-k8s.wzs.wistron.com.cn/base_image/docker:stable
+  tags:
+    - shared-runner01
+  variables:
+  script:
+    - echo "this docker image packing is for TEST"
+    - docker build -t ${BUILD_IMAGE_NAME}:${DOCKER_TEST_IMAGE_TAG} --rm=true .
+    - docker tag ${BUILD_IMAGE_NAME}:${DOCKER_TEST_IMAGE_TAG} ${HARBOR_URL}/${HARBOR_PROJECT}/${BUILD_IMAGE_NAME}:${DOCKER_TEST_IMAGE_TAG}
+    - echo "${HARBOR_PASSWORD}" | docker login -u "${HARBOR_USER}" --password-stdin ${HARBOR_URL}
+    - docker push ${HARBOR_URL}/${HARBOR_PROJECT}/${BUILD_IMAGE_NAME}:${DOCKER_TEST_IMAGE_TAG}
+
+deploy_for_test:
+  only:
+    - master
+  stage: deploy_for_test
+  image: harbor-k8s.wzs.wistron.com.cn/base_image/rancher-deploy-tool:latest
+  tags:
+    - shared-runner01
+  variables:
+  script:
+    - ls -al
+    
+unit_test:
+  only:
+    - master
+  stage: test
+  except:
+    - tags
+  before_script:
+    - ls
+  script:
+    - ls
+  tags:
+    - shared-runner01
+
+get_version:
+  only:
+    - master
+    - /^pre-production.*$/
+    - production
+    - forkprd
+    - /^fix-.*$/
+  image: harbor-k8s.wzs.wistron.com.cn/base_image/alpine:3.10
+  stage: setup
+  tags:
+    - shared-runner01
+  before_script:
+    - . ci-funcs.sh
+  script:
+    - get_version
+  artifacts:
+    paths:
+      - build-vars.sh
+    when: always
+    expire_in: 1 days
+
+code_scan:
+  only:
+    - master
+  image: harbor-k8s.wzs.wistron.com.cn/base_image/sonar-scanner-cli:4
+  except:
+    - tags
+  stage: code_scan
+  tags:
+    - shared-runner01
+  before_script:
+    - if test "${SOURCEPJ}" != "true"; then echo "Not Source Code Project, exit ci."; exit 0; fi;
+  script:
+    - ls
+
+docker-build:
+  only:
+    - master
+    - production
+    - /^pre-production.*$/
+    - /^fix-.*$/
+  image: harbor-k8s.wzs.wistron.com.cn/base_image/vc-tool:latest
+  stage: deploy
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  tags:
+    - shared-runner01
+  before_script:
+    - source build-vars.sh
+    - echo ${SYS_VER}
+    - . ci-funcs.sh
+  script:
+    - docker_build
+  artifacts:
+    paths:
+      - build-vars-docker_build.sh
+    when: always
+    expire_in: 1 days
+
+update:
+  only:
+    - master
+    - /^pre-production.*$/
+    - production
+    - forkprd
+    - /^fix-.*$/
+  tags:
+    - shared-runner01
+  stage: update
+  image: harbor-k8s.wzs.wistron.com.cn/datteam/alpine:20210810
+  before_script:
+    - export CI_JOB_TIMESTAMP=$(date +"%s")
+    - |
+      {
+        source build-vars-docker_build.sh;
+      } || {
+        echo "No need to update.";
+        exit 0;
+      }
+    - echo ${SYS_VER}
+    - . ci-funcs.sh
+  script:
+    - cd_update
+
+
+release_test_pods:
+  only:
+    - master
+  stage: clean
+  image: harbor-k8s.wzs.wistron.com.cn/base_image/rancher-deploy-tool:latest
+  tags:
+    - shared-runner01
+  variables:
+  script:
+    - ls

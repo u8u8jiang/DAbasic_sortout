@@ -1,0 +1,12 @@
+## 假如我程式都寫好了，我想要本地測試build一個image，指定是甚麼?
+docker build . -t harbor-k8s.wzs.wistron.com.cn/datteam/iris-fastapi-ci:1.0.0
+
+## 我想看image是否建立成功，假如image名稱包含「iris」
+docker images|grep iris
+
+## 確定iamge建立成功，我想要在本地執行試試看;成功執行下面的程式碼後，你就可以去localhost:3000/docs查看是否run成功
+docker run -itd -p 3000:5000 harbor-k8s.wzs.wistron.com.cn/datteam/iris-fastapi-ci:1.0.0
+
+## 我想要把這個image推到公司的harbor上面；執行下面程式碼後，你就必須要輸入工號跟開機密碼
+docker login harbor-k8s.wzs.wistron.com.cn
+docker push harbor-k8s.wzs.wistron.com.cn/datteam/iris-fastapi-ci:1.0.0
