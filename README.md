@@ -12,8 +12,8 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 | 6 | Bussiness_PM |translator training |  2022.05.07 |   
 | 7 | Bussiness_PM/DigitalTwins.md | learn for digital twin with Clik | 2022.05.10 |
 | 8 | Tensorflow2/TensorFlow-2.x-Tutorials | TensorFlow-2.x-Tutorials  | not yet |   
-| 9 | Tensorflow2/深度学习与TensorFlow2入门实战 | 深度学习与TensorFlow2入门实战 | 2022.07.25 |     
-| 10 | Database_SQL/3_幕課網大數據開發體系課程 | watch online course of bigdata dev, to know overall of bigdata concept | 2022.08-11 |   
+| 9 | Tensorflow2/DLandTensorFlow2入门 | 深度学习与TensorFlow2入门实战 | 2022.07.25 |     
+| 10 | Database_SQL/3_幕課網大數據開發 | watch online course of bigdata dev, to know overall of bigdata concept | 2022.08-11 |   
 
 
 
