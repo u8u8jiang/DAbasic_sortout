@@ -3,7 +3,7 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 [DA requirement](./DA_requirement.md)  
 
 | No | folder |  Description  |  Date | 
-|:--------:|:-------:|:-------:|:-------:|:-------:| 
+|:--------:|:-------:|:-------:|:-------:| 
 | 1 | Tensorflow2/senior command |  | senior command- NNpaper*10 | 2022.03 |   
 | 2 | Database_SQL/1_tutorial | learn for SQL with Clik | 2022.04.11 |  
 | 3 | Database_SQL/2_DAemployee | read SQL doc in DAbigdata | 2022.05.03 |   
