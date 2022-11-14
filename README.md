@@ -4,11 +4,11 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 
 | No | folder |  Description  |  Date | 
 |:--------:|:-------:|:-------:|:-------:| 
-| 2.1 | note | Coursera - DA basic | 2021.05.26 | 
+| 2.1 | Onenote | Coursera - DA basic | 2021.05.26 | 
 | 3.0 | summer_camp | an exercise after AOI in 2021 summer | 2021.07-08 | 
-| 1.0 | note | minitab 6sigma | 2021.09 | 
-| 2.2 | note | LHY machine learning | 2021.10 | 
-| 1.1 | note | DSAI | 2022.01 | 
+| 1.0 | Notebook | minitab 6sigma | 2021.09 | 
+| 2.2 | Notebook | LHY machine learning | 2021.10 | 
+| 1.1 | Onenote | DSAI | 2022.01 | 
 | 3.1 | witlab2019 | docker, k8s, git | 2022.01 | 
 | 2.3 | Tensorflow2/senior command | senior command- NNpaper*10 | 2022.03 |   
 | 3.2 | Database_SQL/1_tutorial | learn for SQL with Clik | 2022.04.11 |  
