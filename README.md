@@ -1,4 +1,8 @@
-In 2022.04, sortout the basic DA knowledge studied last year, and practice leecode and python 100days to enhence my technical skill.
+In 2022.04, sortout the basic DA knowledge studied last year,   
+this year learn some online course, such as witlab, tf2, SQL, translator, bigdata...      
+totally, the DA skill might be seperated to three part, PM skill, algorithm, infra.    
+
+
 
 [DA requirement](./DA_requirement.md)  
 
@@ -21,8 +25,9 @@ In 2022.04, sortout the basic DA knowledge studied last year, and practice leeco
 
 
 
+# Next step: to enhence my technical skill    
 
-next step update in algorithm_coding repository    
+Be going to update in algorithm_coding repository    
 * NLPalgorithm    
 * python100days   
 

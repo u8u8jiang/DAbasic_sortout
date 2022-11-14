@@ -38,10 +38,20 @@ Container: Docker
 3.	MQTT  
 功能設計: Function Tree Design, Schedule Control, Product Roadmap
 
-# Others
+# PM-思考戰略與監測數據表現
 - 需求訪談: 業務流程分析  
 - 場景定義: 9 Box / 業務流程分析  
 - 跨部門專案合作與溝通  
-
+1. 產品思路(Thinking)：「想清楚」比「開始做」重要    
+    - Miro, precesson, Xmind    
+    - Onenote- 寫靈感, 臨時筆記    
+2. 產品設計 (Design)    
+    - figma, Sketch, Axure- UIUX     
+3. 專案管理 (Project Management)    
+    - jira    
+4. 數據實驗(Data + Experiment)   
+    - 根據屬性與用戶行為分群用戶   
+    - 理解基礎商業數據、行為數據   
+    - 漏斗、轉化率、事件三者關係   
 
 
