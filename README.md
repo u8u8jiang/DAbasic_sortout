@@ -25,10 +25,19 @@ totally, the DA skill might be seperated to three part, PM skill, algorithm, inf
 
 
 
+
 # Next step: to enhence my technical skill    
 
 Be going to update in algorithm_coding repository    
 * NLPalgorithm    
 * python100days   
 
+
+# Memo      
+
+* sql的語法的寫入順序是非常嚴格的，需要依select...from...where…group by…having…order by..limit...的順序輸入
+
+* 分散式系統的大分類：
+1. 分散式計算：Spark, Flink, Impala, Presto
+2. 分散式儲存：分散式的檔案系統 HDFS, S3, Minio；分散式的資料庫 Redis, Cassandra, Elasticsearch, MongoDB
 
