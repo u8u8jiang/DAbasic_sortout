@@ -3,20 +3,48 @@
 视频教程链接：[深度学习与TensorFlow2入门实战](https://study.163.com/course/courseMain.htm?share=2&shareId=480000001847407&courseId=1209092816&_trace_c_p_k2_=10515f5942ba46b5a4ec1c30a46b0269)
 
  
-01 深度學習初見  
-03 回歸問題  
-04 tf2 basic  
-05 tf2 adv  
-06 神經網絡與全連接層  
-07 隨機梯度下降  
-08 keras高層接口
-09 過擬合    
-10 卷積神經網絡  
-11 循環神經網絡  
-12 autoencoders  
-13 GAN  
+* 01 深度學習初見       
+    * autograd.py           
+    * gpu_accelerate.py     
+    * test.py       
+* 03 回歸問題       
+    * linear_regression.py      
+    * main.py  #手寫數字辨識       
+* 04 tf2 basic          
+    * forward.py        
+    * typeitmyself.py       
+* 05 tf2 adv        
+    * topk.py       
+    * main.py  #數據縣幅        
+    * meshgrid.py       
+* 06 神經網絡與全連接層         
+    * forward.py        
+    * mnist_tensor.py       
+    * mlp.py        
+    * loss.py       
+* 07 隨機梯度下降       
+    * 2nd_derivative.py     
+* 08 keras高層接口      
+    * metrices.py       
+* 09 過擬合         
+* 10 卷積神經網絡     
+    * cifer100_train.py             
+    * resnet.py             
+    * resnet18_train.py         
+* 11 循環神經網絡       
+    * sentiment_analysis_cell.py        
+    * sentiment_analysis_layer.py        
+* 12 autoencoders       
+    * autoencoder.py        
+    * vae.py        
+* 13 GAN        
+    * gan.py        
+    * gan_train.py      
+    * wgan.py       
+    * wgan_train.py     
 
-![](0-课程介绍/cover.png)
+
+
 
 
 # Result
