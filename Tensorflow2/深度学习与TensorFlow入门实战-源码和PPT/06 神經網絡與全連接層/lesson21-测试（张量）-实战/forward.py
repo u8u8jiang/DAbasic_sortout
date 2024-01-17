@@ -19,9 +19,10 @@ print(tf.reduce_min(x), tf.reduce_max(x))
 print(tf.reduce_min(y), tf.reduce_max(y))
 
 
+#build a dataset
 train_db = tf.data.Dataset.from_tensor_slices((x,y)).batch(128)
 test_db = tf.data.Dataset.from_tensor_slices((x_test,y_test)).batch(128)
-train_iter = iter(train_db)
+train_iter = iter(train_db) #iteration
 sample = next(train_iter)
 print('batch:', sample[0].shape, sample[1].shape)
 
